@@ -3,7 +3,7 @@
   <div class="container align-items-center" id="landing">
   
     <div class="row align-items-center">
-      <div class="row row-cols-1 align-items-end mx-auto justify-content-start" style="height: fit-content;">
+      <div class="row row-cols-1 align-items-end mx-auto justify-content-start landing-container-row">
   
         <div class=" text-start text-lg-start">
           <span class="display-1 landing-text">Hello,
@@ -12,11 +12,11 @@
              <span class="highlight-main">Enzo Campfens</span> 
           </span>
           <br />
-          <span class="highlight-sub text-subtitle-1 fs-5 pb-5 pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          <span class="highlight-sub text-subtitle-1 fs-5 pb-5 pt-3">A software developer with a passion for programming and learning.</span>
         </div>
   
           <a href="#contact" class="p-0">
-              <button type="button" class="contact-btn rounded shadow p-3 px-5" style="width:fit-content">Get in contact!</button>
+              <button type="button" class="contact-btn rounded shadow p-3 px-5">Get in contact!</button>
           </a>
   
       </div>
@@ -36,7 +36,7 @@
   }
   
   .highlight-main {
-    color: #15C196;
+    color: $green-highlight;
     white-space: nowrap;
   }
   
@@ -46,13 +46,18 @@
     color: $grey-highlight;
   }
 
+  .landing-container-row {
+    height: fit-content;
+  }
+
   .contact-btn {
       background-color: transparent;
-      border: 2px solid #15C196;
+      border: 2px solid $green-highlight;
       margin:14px;
       font-size:1.4rem;
       font-weight:400;
       transition: background-color .5s;
+      width:fit-content;
   }
 
   .contact-btn:hover {

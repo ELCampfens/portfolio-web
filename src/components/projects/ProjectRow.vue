@@ -11,7 +11,7 @@
         target="_blank"
         class="icon-link" 
         :href="projectUrl.url">
-            <i :class="`bi bi-${projectUrl.name}`"></i>
+            <i :class="`bi bi-${projectUrl.icon}`"></i>
         </a>
 
 
@@ -49,19 +49,9 @@ export default {
 
 <style lang="scss" scoped>
 
-pre {
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
-
-    font-family: inherit;
-}
-
 .bi {
     font-size:2em;
-    color: black !important;
+    color: $green-highlight !important;
 }
 
 .project-row {

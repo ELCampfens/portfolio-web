@@ -3,7 +3,7 @@
 <div class="container py-5 align-items-center" id="what-i-do">
 
   <div class="row align-items-center">
-    <div class="row align-items-end mx-auto" style="height: fit-content;">
+    <div class="row align-items-end mx-auto about-me-container-row">
 
       <sectionHeader 
       :title="'About Me'" 
@@ -14,30 +14,36 @@
 
       <div class="feature col justify-content-center text-center px-2">
         <div class="card-container m-2 p-4 rounded shadow">
-          <div class="feature-icon d-inline-flex fs-2 mb-3 rounded-4 mx-auto">
+          <div class="feature-icon d-inline-flex fs-2 rounded-4 mx-auto">
             <i class="bi bi-code-slash"></i>
           </div>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <pre>
+            {{ coding }}
+          </pre>
         </div>
       </div>
 
 
       <div class="feature col justify-content-center text-center px-2">
         <div class="card-container m-2 p-4 rounded shadow">
-          <div class="feature-icon d-inline-flex fs-2 mb-3 rounded-4 mx-auto">
-            <i class="bi bi-display"></i>
+          <div class="feature-icon d-inline-flex fs-2 rounded-4 mx-auto">
+            <i class="bi bi-lightbulb"></i>
           </div>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <pre>
+            {{ creativity }}
+          </pre>
         </div>
       </div>
 
 
       <div class="feature col justify-content-center text-center px-2">
         <div class="card-container m-2 p-4 rounded shadow">
-          <div class="feature-icon d-inline-flex fs-2 mb-3 rounded-4 mx-auto">
-            <i class="bi bi-bar-chart"></i>
+          <div class="feature-icon d-inline-flex fs-2 rounded-4 mx-auto">
+            <i class="bi bi-controller"></i>
           </div>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <pre>
+            {{ hobbies }}
+          </pre>
         </div>
       </div>    
       
@@ -56,6 +62,13 @@ import sectionHeader from './generalComponents/sectionHeader.vue';
 export default {
   components: {
     sectionHeader
+  },
+  data() {
+    return {
+      coding: '\nProgramming started out as a hobby for me with small websites but my interest slowly became more. \nI decided I wanted to study programming as well and turned my hobby into my career!',
+      hobbies: '\nI enjoy working out in my free time. \nI find it destressing after a full day of programming, and so I try to visit the gym frequently. \nWhen I\'m not working out I can be found playing games with friends, discovering new worlds and going on all kinds of virtual adventures!',
+      creativity: '\nDuring programming I always like to experiment with new ideas. \nI aspire to improve and innovate with existing projects and think out of the box with new projects.'
+    }
   }
 }
 
@@ -64,11 +77,15 @@ export default {
 <style lang="scss" scoped>
 
 i {
-  font-size:1.5em;
+  font-size:1.2em;
 }
 
 .card-container {
   background-color: $secundaire-color-bg;
+}
+
+.about-me-container-row {
+  height: fit-content;
 }
 
 @include media-breakpoint-down(md) {

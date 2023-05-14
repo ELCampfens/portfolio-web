@@ -3,8 +3,7 @@
         <div class="position-relative">
             <hr style="border-color: black;"/>
             <span 
-            class="position-absolute top-50 start-50 translate-middle px-2 title-box text-nowrap"
-            :class="{'fs-1': titleUsage == 'main', 'fs-3': titleUsage == 'sub'}"
+            class="position-absolute top-50 start-50 translate-middle px-2 title-box text-nowrap fs-1"
             >{{ title }}</span>
         </div>
     </div>
@@ -13,9 +12,7 @@
 <script>
 export default {
     props: {
-        title: String,
-        // Either 'main' or 'sub'
-        titleUsage: String
+        title: String
     }
 }
 </script>

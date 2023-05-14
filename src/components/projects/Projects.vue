@@ -1,15 +1,14 @@
 <template>
 
 
-<div class="container py-5 align-items-center" id="projects" style="height:fit-content !important;">
+<div class="container py-5 align-items-center" id="projects">
 
     <div class="row align-items-center">
-        <div class="row  mx-auto" style="height: fit-content;">
+        <div class="row mx-auto projects-container-row" style="">
             
             
             <sectionHeader
             :title="'Projects'"
-            :titleUsage="'main'"
             class="pb-5"
             />
 
@@ -48,12 +47,12 @@ export default {
             projectData: [
                 {
                     title: 'Portfolio website',
-                    description: `This portfolio website is build as part of my projects. \nIt has been build in VueJS & bootstrap`,
-                    projectUrls: [
-                        // {
-                        //     name: 'github',
-                        //     url: '#'
-                        // }
+                    description: `A portfolio build mainly in VueJS with bootstrap for the layout and styling parts. \nThe website was made to showcase my (future) work and who i am aside from other sources like LinkedIn.`,
+                    projectUrls: [ 
+                        {
+                            icon: 'display',
+                            url: 'https://enzocampfens.dev'
+                        }
                     ],
                     languages: ['HTML', 'CSS'],
                     frameworks: ['VueJS', 'Bootstrap'],
@@ -65,6 +64,11 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+#projects,
+.projects-container-row {
+    height:fit-content !important;
+}
 
 </style>

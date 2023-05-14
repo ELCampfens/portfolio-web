@@ -1,19 +1,16 @@
 <template>
 
-<div class="container py-5 align-items-center" id="exp-and-edu" style="height:fit-content !important;">
+<div class="container py-5 align-items-center" id="exp-and-edu">
 
     <div class="row align-items-center">
-        <div class="row mx-auto" style="height: fit-content;">
+        <div class="row mx-auto exp-and-edu-container-row">
 
-
-            
             <sectionHeader
             :title="'Employment & Education'"
-            :titleUsage="'main'"
             />
 
             <div class="row g-4 pb-4 row-cols-1 mx-auto justify-content-center rounded" >
-                <span class="fs-3 pb-2 px-5 border-bottom text-center" style="width:fit-content">Employement</span>
+                <span class="fs-3 pb-2 px-5 border-bottom text-center sub-section-header">Employement</span>
             </div>
             <ExpAndEduRow
             v-for="(data, index) in ExpierenceData"
@@ -30,7 +27,7 @@
             />
 
             <div class="row g-4 pb-4 row-cols-1 mx-auto justify-content-center rounded" >
-                <span class="fs-3 pb-2 px-5 border-bottom text-center" style="width:fit-content">Internships</span>
+                <span class="fs-3 pb-2 px-5 border-bottom text-center sub-section-header">Internships</span>
             </div>
             <ExpAndEduRow
             v-for="(data, index) in internData"
@@ -47,7 +44,7 @@
             />
 
             <div class="row g-4 pb-4 row-cols-1 mx-auto justify-content-center rounded" >
-                <span class="fs-3 pb-2 px-5 border-bottom text-center" style="width:fit-content">Education</span>
+                <span class="fs-3 pb-2 px-5 border-bottom text-center sub-section-header">Education</span>
             </div>
             <ExpAndEduRow
             v-for="(data, index) in EducationData"
@@ -162,6 +159,15 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+#exp-and-edu,
+.exp-and-edu-container-row {
+    height: fit-content !important;
+}
+
+.sub-section-header {
+    width:fit-content !important;
+}
 
 </style>

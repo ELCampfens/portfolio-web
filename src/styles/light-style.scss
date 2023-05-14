@@ -4,7 +4,7 @@ $primary-color-bg: #ededed;
 $secundaire-color-bg: #FAF9F6;
 
 $red-hightlight: #FF3B3B;
-$green-highlight: #05C270;
+$green-highlight: #15C196;
 $blue-highlight: #3D7BFA;
 $yellow-highlight: #FFCC00;
 $teal-highlight: #74E0E6;
@@ -23,11 +23,17 @@ body {
     border-color:#111;
 }
 
-// All CSS for 'WhatiDo' component
 .icon-color {
     color:black !important;
 }
 
-// All CSS for 'ExpAndEdu'
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 
-// All CSS For 'ExpAndEduRow'
+    font-family: inherit;
+}
+

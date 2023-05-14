@@ -7,7 +7,7 @@
             <div class="col col12 col-lg-8">
                 <div class="position-relative m-4">
                     <hr style="border-color: white;"/>
-                    <span class="position-absolute top-0 start-50 translate-middle px-2 fs-3" style="width: fit-content; height:2rem; background-color:#111; line-height:30px; color:white;">Contact</span>
+                    <span class="position-absolute top-0 start-50 translate-middle px-2 fs-3 section-header-text">Contact</span>
                 </div>
             </div>
 
@@ -56,12 +56,21 @@ export default {
 }
 
 i {
-    font-size: 1.8em;
+    font-size: 2em;
     padding-left:0px;
+    color: $green-highlight;
 }
 
 .contact-info-col {
     height: fit-content;
+}
+
+.section-header-text {
+    width: fit-content; 
+    height:2rem; 
+    background-color:#111; 
+    line-height:30px; 
+    color:white;
 }
 
 </style>

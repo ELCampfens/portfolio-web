@@ -7,7 +7,7 @@
         <span class="fs-6 mt-1 sub-date" v-if="education">{{ education }}</span>
         <span class="fs-6 mt-2 sub-date">{{ start_date }} - {{ end_date }}</span>
 
-        <span class="fs-6">{{ description }}</span>
+        <pre class="fs-6">{{ description }}</pre>
     </div>
 
 </template>
@@ -31,7 +31,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .exp-edu-container {
     width:fit-content;
