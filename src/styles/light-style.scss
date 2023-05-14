@@ -1,0 +1,33 @@
+$enable-responsive-font-sizes: true;
+
+$primary-color-bg: #ededed;
+$secundaire-color-bg: #FAF9F6;
+
+$red-hightlight: #FF3B3B;
+$green-highlight: #05C270;
+$blue-highlight: #3D7BFA;
+$yellow-highlight: #FFCC00;
+$teal-highlight: #74E0E6;
+$purple-highlight: #AC5CD9;
+$grey-highlight: #9090A7;
+
+
+
+body {
+    background-color: $primary-color-bg !important;
+
+    color: black !important;
+}
+
+.section-header {
+    border-color:#111;
+}
+
+// All CSS for 'WhatiDo' component
+.icon-color {
+    color:black !important;
+}
+
+// All CSS for 'ExpAndEdu'
+
+// All CSS For 'ExpAndEduRow'
