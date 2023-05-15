@@ -61,7 +61,7 @@ export default {
 
 .lang-badge {
     width:fit-content; 
-    border: 2px solid black;
+    border: 2px solid $green-highlight;
     color:black;
 }
 

@@ -47,11 +47,15 @@ export default {
             projectData: [
                 {
                     title: 'Portfolio website',
-                    description: `A portfolio build mainly in VueJS with bootstrap for the layout and styling parts. \nThe website was made to showcase my (future) work and who i am aside from other sources like LinkedIn.`,
+                    description: `A portfolio build mainly in VueJS with bootstrap for the layout and styling parts. \nThe website was made to showcase my (future) work and who I am aside from other sources like LinkedIn.`,
                     projectUrls: [ 
                         {
                             icon: 'display',
                             url: 'https://enzocampfens.dev'
+                        },
+                        {
+                            icon: 'github',
+                            url: 'https://github.com/ELCampfens/portfolio-web'
                         }
                     ],
                     languages: ['HTML', 'CSS'],

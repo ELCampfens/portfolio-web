@@ -13,7 +13,7 @@
                 <span class="fs-3 pb-2 px-5 border-bottom text-center sub-section-header">Employement</span>
             </div>
             <ExpAndEduRow
-            v-for="(data, index) in ExpierenceData"
+            v-for="(data, index) in employmentData"
             :key="data.start"
 
             :start_date="data.start"
@@ -82,27 +82,26 @@ export default {
     },
     data() {
         return {
-            EducationData: [
+            employmentData: [
             {
-                    start: 'Aug 2016',
-                    end: 'Mar 2023',
-                    education: 'Software Engineer Bachelor',
-                    title: 'Student',
-                    location: 'University of Applied Sciences',
-                    city: 'Leiden',
-                    desc: ''
+                    start: 'Jan 2020',
+                    end: 'Jan 2023',
+                    education: '',
+                    title: 'Jr. Developer',
+                    location: 'SimpledCard B.V.',
+                    city: 'Amsterdam',
+                    desc: 'Handling data requests. \nCreating and maintaining internal processes. \nMaintaining internal applications.'
                 },
                 {
-                    start: 'Jan 2015',
-                    end: 'Jun 2016',
-                    education: 'MBO 4 Application Developer',
-                    title: 'Student',
-                    location: 'Nova college',
+                    start: 'Nov 2018',
+                    end: 'Jul 2019',
+                    education: '',
+                    title: 'Developer',
+                    location: 'Pinto Solutions',
                     city: 'Haarlem',
-                    desc: ''
+                    desc: 'Developing and maintaining WordPress websites.'
                 }
             ],
-
             internData: [
             {
                     start: 'Nov 2021',
@@ -111,7 +110,7 @@ export default {
                     title: 'Jr. Developer Intern',
                     location: 'SimpledCard B.V.',
                     city: 'Amsterdam',
-                    desc: 'Developed an application to be able to add extra data to transaction for better categorization'
+                    desc: 'Developed an internal web application to add additional information to transactional data.'
                 },
                 {
                     start: 'Aug 2020',
@@ -132,25 +131,24 @@ export default {
                     desc: 'Developing and maintaining of webscrapers in Java.'
                 }
             ],
-
-            ExpierenceData: [
+            EducationData: [
             {
-                    start: 'Jan 2020',
-                    end: 'Jan 2023',
-                    education: '',
-                    title: 'Jr. Developer',
-                    location: 'SimpledCard B.V.',
-                    city: 'Amsterdam',
-                    desc: 'Handling data requests, developing and maintaining reporting, dashboards and internal processes'
+                    start: 'Aug 2016',
+                    end: 'Mar 2023',
+                    education: 'Software Engineer Bachelor',
+                    title: 'Student',
+                    location: 'University of Applied Sciences',
+                    city: 'Leiden',
+                    desc: ''
                 },
                 {
-                    start: 'Nov 2018',
-                    end: 'Jul 2019',
-                    education: '',
-                    title: 'Developer',
-                    location: 'Pinto Solutions',
+                    start: 'Jan 2015',
+                    end: 'Jun 2016',
+                    education: 'MBO 4 Application Developer',
+                    title: 'Student',
+                    location: 'Nova college',
                     city: 'Haarlem',
-                    desc: 'Developing and maintaining of WordPress websites'
+                    desc: ''
                 }
             ]
         }
